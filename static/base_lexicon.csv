@@ -313,11 +313,11 @@ dbp:Palm_kernel,palm kernel,palm seed,,,,
 dbp:Palm_kernel_oil,palm kernel oil,"palm seed oil, kernel oil",,,,
 dbp:Palm_sugar,palm sugar,jaggery,,,,
 dbp:Paper,paper,,,,,
-dbp:Pea,pea,,dbcat:Seeds,,,PeaPlant
+dbp:Pea,pea,,,,,PeaPlant
 dbp:Peach,peach,,,,,
 dbp:Peanut,peanut pod,"ground nut, groundnut",,,,PeanutPlant
 dbp:Pear,pear,pyrus,,,,PearTree
-dbp:Pearl,pearl,,dbcat:Essential_oil,,,
+dbp:Pearl,pearl,,,,,
 dbp:Pearl_oyster,pearl oyster,,,,,
 dbp:Peppermint_extract,peppermint extract,peppermint oil,,,Essential_oil,
 dbp:Perry,perry,,,,,
