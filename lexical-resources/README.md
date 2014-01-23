@@ -1,6 +1,7 @@
-digtrade
+Trading Consequences Lexical Resources
 ========
 
-Trading Consequences data and code
+* `base_lexicon.csv` is a manually created list of commodities,
+  derived from Customs Records and annotated with DBpedia concepts
 
-cool stuff
+* `tradcon_thesaurus.ttl` is a SKOS ontology created by scripts from `base_lexicon.csv`
