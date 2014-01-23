@@ -1,6 +1,2 @@
-digtrade
-========
+Data and code created by the Trading Consequences Project
 
-Trading Consequences data and code
-
-cool stuff
