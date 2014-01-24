@@ -1,5 +1,5 @@
-Annotation Guidelines for Geo-Referencing Annotation
-====================================================
+Guidelines for Geo-Referencing Annotation
+=========================================
 
 <p>This directory contains information on the geo-referencing annotation</p>
 
