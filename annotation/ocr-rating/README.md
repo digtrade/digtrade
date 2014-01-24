@@ -1,4 +1,4 @@
-Note for OCR Rating
+Notes on OCR Rating
 ===================
 
 <p>This directory contains the following information</p>
