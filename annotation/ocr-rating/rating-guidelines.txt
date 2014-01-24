@@ -1,0 +1,26 @@
+OCR text quality rating
+=======================
+
+Please, take a look at each document in the list (zcat) and rate its OCR text quality using a scale ranging from 1 to 5.  In particular look at the text in the <text> elements and ignore any disclaimers.  Only focus on the English parts of the text, in case a document contains sections in other languages.  Some documents might be really long.  You don't need to read the entire document, but please have a look at more than just the beginning when you make your judgement.
+
+Please, try to rate the documents in relation to all others.  It might make sense to have a look at a few documents first and asks any questions early, should they arise.
+
+Use the following scale for rating the text  qquality.
+
+5 ... the document's OCR quality is very high.  There are very few errors.  The text is easily readable and understandable.
+4 ... the document's OCR quality is good.  There are some errors but they are limited in number and the text is still mostly readable and understandable.
+3 ... the document's OCR quality is medium.  There are numerous OCR error and only part of the text is readable/understandable
+2 ... the document's OCR quality is low.  There is a large number of OCR errors which seriously affects the readability/understandability of the majority of the text.
+1 ... the document's OCR quality is extremely bad.  The text is so full of errors that it is not understandable/readable.
+
+Try to use the entire scale when rating the documents. Please, record any comments you have while doing the rating.
+
+Please add the rating after the document, with a space between the document and the score (followed by space and comment if necessary).
+
+
+
+
+
+
+
+   
