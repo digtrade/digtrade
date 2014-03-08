@@ -1,0 +1,45 @@
+PREFIX dbp: <http://dbpedia.org/resource/> 
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#> 
+PREFIX tc: <http://vocab.inf.ed.ac.uk/tc/>
+PREFIX prov: <http://www.w3.org/ns/prov#> 
+PREFIX foaf: <http://xmlns.com/foaf/spec/>
+
+CONSTRUCT 
+{
+?subject rdf:type skos:Concept ; 
+         dcterms:subject ?concept;
+         skos:prefLabel ?lcLabel ;
+         skos:broader tc:Commodity ;
+         foaf:depiction ?image ;
+         prov:wasDerivedFrom ?prov .
+}
+WHERE 
+{ 
+SERVICE <http://localhost:3030/ds/query>
+  { SELECT ?subject ?concept ?lcLabel ?image ?prov
+    WHERE
+    { ?concept rdf:type skos:Concept . 
+      SERVICE <http://dbpedia.org/sparql>
+        { ?subject dcterms:subject ?concept;
+                   prov:wasDerivedFrom ?prov ;
+                   rdfs:label ?label .
+          OPTIONAL { ?subject foaf:depiction ?image . }
+          FILTER ( langMatches(lang(?label), "en" ))
+          BIND (LCASE(?label) as ?lcLabel)
+        }
+
+    }
+  }
+}
+
+
+
+# For Emacs:
+# Local Variables:
+# tab-width: 4
+# indent-tabs-mode: nil
+# End:
+

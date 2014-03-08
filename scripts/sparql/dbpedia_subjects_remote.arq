@@ -1,0 +1,34 @@
+PREFIX dbp: <http://dbpedia.org/resource/> 
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#> 
+PREFIX tc: <http://id.inf.ed.ac.uk/commodity/>
+
+CONSTRUCT
+{ ?concept dcterms:subject ?subject . }
+WHERE 
+{ 
+SERVICE <http://localhost:3030/ds/query>
+  { SELECT ?concept ?subject
+    WHERE
+    { ?concept rdf:type skos:Concept . 
+      {
+      ?concept dcterms:subject ?subject .
+      }
+      UNION
+      {
+      SERVICE <http://dbpedia.org/sparql>
+        { ?concept dcterms:subject ?subject . }
+      }    
+    }
+  }
+}
+
+
+# For Emacs:
+# Local Variables:
+# tab-width: 4
+# indent-tabs-mode: nil
+# End:
+
