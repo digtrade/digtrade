@@ -1,7 +1,11 @@
-# The file cats.ttl consists of concepts plus their categories; these
-# categories have been manually filtered to get the set
-# cats_filtered.ttl, and then the latter are used to eliminate
+# The file `cats.ttl` consists of leaf concepts plus their Wikipedia categories.
+# The categories have been manually filtered to yield the set
+# `cats_filtered.ttl`. This query uses the latter to eliminate
 # unwanted categories from the former.
+#
+# @title Build new RDF graph using categories from pre-filtered list
+
+
 
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#> 

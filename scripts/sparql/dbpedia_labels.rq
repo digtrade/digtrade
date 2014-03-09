@@ -1,5 +1,7 @@
 # Do sibling expansion
 #
+#
+# @title Build new SKOS thesaurus using DBPedia labels
 
 PREFIX dbp: <http://dbpedia.org/resource/> 
 PREFIX dcterms: <http://purl.org/dc/terms/>
