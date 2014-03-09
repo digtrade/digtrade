@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Sparql Query Documentation</title>
+    <title>Lexicon Boostrapping SPARQL Queries</title>
     <link href="bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="codemirror.css">
     <style type="text/css">
@@ -24,9 +24,11 @@
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container-fluid">
-          <a class="brand" href="index.html">Sparql Query Documentation</a>
+          <a class="brand" href="index.html">Lexicon Boostrapping SPARQL Queries</a>
           <ul class="nav">
-          			  	
+          	
+		  		<li><a href="index.html#overview">Overview</a></li>
+		  			  	
 		  	
 		  </ul>
         </div>
@@ -35,15 +37,23 @@
     
    <div class="container">
       <div class="hero-unit">
-        	<h1>Sparql Query Documentation</h1>
+        	<h1>Lexicon Boostrapping SPARQL Queries</h1>
       </div>
 
       <div class="row">
         <div class="span12">
-          <p></p>
+          <p>A collection of SPARQL queries for the Trading Consequences lexicon</p>
         </div>
       </div>
 
+	  
+      	<div class="row">
+        	<div class="span12">
+        		<h3 id="overview">Overview</h3>
+          		<p>SPARQL queries use for lexicon bootstrapping in the <strong>Trading Consequences</strong> project.</p>
+
+        	</div>
+      	</div>
 	        	
       
       <div class="row">
@@ -59,15 +69,15 @@
             <tbody>
            		
            		<tr>
-           		  <td><a href="check_cats.html">check_cats.rq</a></td><td><code>check_cats.rq</code></td>
+           		  <td><a href="check_cats.html">Add Wikipedia categories from pre-filtered list</a></td><td><code>check_cats.rq</code></td>
            		</tr>
            		
            		<tr>
-           		  <td><a href="dbpedia_labels.html">dbpedia_labels.rq</a></td><td><code>dbpedia_labels.rq</code></td>
+           		  <td><a href="dbpedia_subjects_remote.html">Build new RDF graph using categories DBPedia</a></td><td><code>dbpedia_subjects_remote.rq</code></td>
            		</tr>
            		
            		<tr>
-           		  <td><a href="dbpedia_subjects_remote.html">dbpedia_subjects_remote.rq</a></td><td><code>dbpedia_subjects_remote.rq</code></td>
+           		  <td><a href="dbpedia_labels.html">Build new SKOS thesaurus using DBPedia labels</a></td><td><code>dbpedia_labels.rq</code></td>
            		</tr>
            		
 			</tbody>           		
