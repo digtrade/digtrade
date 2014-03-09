@@ -1,3 +1,6 @@
+# query DBPedia endpoint for categories associated with concepts from customs records:
+# this will ignore all concepts that are in tc namespace
+
 PREFIX dbp: <http://dbpedia.org/resource/> 
 PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -24,11 +27,4 @@ SERVICE <http://localhost:3030/ds/query>
     }
   }
 }
-
-
-# For Emacs:
-# Local Variables:
-# tab-width: 4
-# indent-tabs-mode: nil
-# End:
 
