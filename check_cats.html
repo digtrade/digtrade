@@ -40,10 +40,10 @@
               <div id="query-viewer">              		             
 					<h2 property="title">check_cats.rq</h2>
 					
-						<p property="description"><p>The file cats.ttl consists of concepts plus their categories; these
-categories have been manually filtered to get the set
-cats_filtered.ttl, and then the latter are used to eliminate
-unwanted categories from the former.</p>
+						<p property="description"><p><code>makefile
+cats-reduce: $(DBCATS) $(DBCATS-FILTERED)
+arq --data $(DBCATS) --data $(DBCATS-FILTERED) --query=check_cats.arq  &gt; $(DBCATS-REDUCED)
+</code></p>
 </p>
 											
 					<dl>					
@@ -53,7 +53,16 @@ unwanted categories from the former.</p>
 					  			  
 					  							  					  
 					</dl>					
-					<textarea id="sparql" cols="120" rows="50">PREFIX dcterms: <http://purl.org/dc/terms/>
+					<textarea id="sparql" cols="120" rows="50"># The file `cats.ttl` consists of leaf concepts plus their Wikipedia categories.
+# The categories have been manually filtered to yield the set
+# `cats_filtered.ttl`. This query uses the latter to eliminate
+# unwanted categories from the former.
+
+# @title Add Wikipedia categories from pre-filtered list
+# @author Ewan Klein
+
+
+PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#> 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 
