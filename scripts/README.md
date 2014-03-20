@@ -1,6 +1,6 @@
-digtrade
+Scripts
 ========
 
-Trading Consequences data and code
+The SKOS thesaurus was created from the `base-lexicon.csv` file by a combination of Python scripts and SPARQL queries. 
 
-cool stuff
+Python scripts still need to be cleaned up.
