@@ -28,7 +28,7 @@ The database contains the following tables:
 
 *Location Mentions* contains all location mentions along with their corresponding document, page identifier, and sentence snippet. Furthermore, we store their latitude/longitude coordinates and GeoNames identifier. There are currently 74,744,515 location mentions stored in the database, corresponding to 2,275,186 unique locations identified in the corpus.
 
-*Commodity-Location Relations* contains the text mining component identified a total of 13,969,659 commodity-location relations across the entire document corpus which are stored in this additional table.  Each commodity-location pair is linked to the corresponding commodity/location mentions tables via identifiers to enrich them with additional information such as the corresponding document, sentence snippet, commodity concept, and latitude and longitude.
+*Commodity-Location Relations* contains the commodity-location relations identified by text mining component (13,969,659 in total) across the entire document corpus which are stored in this additional table.  Each commodity-location pair is linked to the corresponding commodity/location mentions tables via identifiers to enrich them with additional information such as the corresponding document, sentence snippet, commodity concept, and latitude and longitude.
 
 **Publications**
 
