@@ -30,3 +30,8 @@ The database contains the following tables:
 
 *Commodity-Location Relations* contains the text mining component identified a total of 13,969,659 commodity-location relations across the entire document corpus which are stored in this additional table.  Each commodity-location pair is linked to the corresponding commodity/location mentions tables via identifiers to enrich them with additional information such as the corresponding document, sentence snippet, commodity concept, and latitude and longitude.
 
+** Publications **
+
+If you are using this database for your research, please cite the Trading Consequences white paper:
+
+Ewan Klein, Beatrice Alex, Claire Grover, Richard Tobin, Colin Coates, Jim Clifford, Aaron Quigley, Uta Hinrichs, James Reid, Nicola Osborne and Ian Fieldhouse. Digging Into Data White Paper: Trading Consequences, March 2014.
