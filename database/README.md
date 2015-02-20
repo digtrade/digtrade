@@ -8,4 +8,4 @@ To restore the database we recommend creating a new postgres database, install t
 
 ```pg_restore -e -Fc -d <dbname> trcons.backup```
 
-where <dbname> is the database you have created. Once restored and the indexes have finished building the database should be approx. 80GB in size.
+where ``<dbname>`` is the database you have created. Once restored and the indexes have finished building the database should be approx. 80GB in size.
