@@ -22,10 +22,11 @@ where ``<dbname>`` is the database you have created. Once restored and the index
 
 The database contains the following tables:
 
-Documents: information about 200,871 documents including document title, author, publication year, collection, and a URL to the original digitized document.
+*Documents* contains information about 200,871 documents including document title, author, publication year, collection, and a URL to the original digitized document.
 
-Commodity Mentions: all mentions of each commodity (currently 28,595,550) reproducing exactly the spelling of the commodity in the text. Each commodity mention is linked to the corresponding document, the page identifier, the sentence snippet from which it was extracted, and the corresponding DBpedia concepts and categories. The latter helps to categorize, for example, commodity mentions that refer to the same commodity but are spelled differently.
+*Commodity Mentions* contains all mentions of each commodity (currently 28,595,550) reproducing exactly the spelling of the commodity in the text. Each commodity mention is linked to the corresponding document, the page identifier, the sentence snippet from which it was extracted, and the corresponding DBpedia concepts and categories. The latter helps to categorize, for example, commodity mentions that refer to the same commodity but are spelled differently.
 
-Location Mentions: all location mentions along with their corresponding document, page identifier, and sentence snippet. Furthermore, we store their latitude/longitude coordinates and GeoNames identifier. There are currently 74,744,515 location mentions stored in the database, corresponding to 2,275,186 unique locations identified in the corpus.
+*Location Mentions* contains all location mentions along with their corresponding document, page identifier, and sentence snippet. Furthermore, we store their latitude/longitude coordinates and GeoNames identifier. There are currently 74,744,515 location mentions stored in the database, corresponding to 2,275,186 unique locations identified in the corpus.
 
-Commodity-Location Relations: the text mining component identified a total of 13,969,659 commodity-location relations across the entire document corpus which are stored in this additional table.  Each commodity-location pair is linked to the corresponding commodity/location mentions tables via identifiers to enrich them with additional information such as the corresponding document, sentence snippet, commodity concept, and latitude and longitude.
+*Commodity-Location Relations* contains the text mining component identified a total of 13,969,659 commodity-location relations across the entire document corpus which are stored in this additional table.  Each commodity-location pair is linked to the corresponding commodity/location mentions tables via identifiers to enrich them with additional information such as the corresponding document, sentence snippet, commodity concept, and latitude and longitude.
+
