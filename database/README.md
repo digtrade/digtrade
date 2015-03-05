@@ -1,5 +1,5 @@
 
-The Trading Consequences database contains the text mining output for the last round of processing completed for the project in December 2013 and is the back-end to all of the [online visualisations](http://tradingconsequences.blogs.edina.ac.uk/access-the-data/) to make it more accessible to historians and other users.  We provide a download of the database for anyone who would like to work directly with the database.
+The Trading Consequences database contains the text mining output for the last round of processing completed for the project in December 2013 and is the back-end to all of the [online visualisations](http://tradingconsequences.blogs.edina.ac.uk/access-the-data/) to make it more accessible to historians and other users.  We provide a download of the database for anyone who would like to work with it directly.
 
 **Download**
 
@@ -20,9 +20,9 @@ where ``<dbname>`` is the database you have created. Once restored and the index
 
 **Database Content**
 
-The database contains the following tables:
+The database contains the text mining output obtained from processing over 200,000 historical documents. The datasets which were processed are listed [here](http://tradingconsequences.blogs.edina.ac.uk/about/the-corpus/).  The database contains the following tables:
 
-*Documents* contains information about 200,871 documents including document title, author, publication year, collection, and a URL to the original digitized document.
+*Documents* contains information about the 200,871 mined documents including document title, author, publication year, collection, and a URL to the original digitised document.
 
 *Commodity Mentions* contains all mentions of each commodity (currently 28,595,550) reproducing exactly the spelling of the commodity in the text. Each commodity mention is linked to the corresponding document, the page identifier, the sentence snippet from which it was extracted, and the corresponding DBpedia concepts and categories. The latter helps to categorize, for example, commodity mentions that refer to the same commodity but are spelled differently.
 
