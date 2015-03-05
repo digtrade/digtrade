@@ -36,6 +36,6 @@ If you are using this database for your research, please cite the Trading Conseq
 
 Ewan Klein, Beatrice Alex, Claire Grover, Richard Tobin, Colin Coates, Jim Clifford, Aaron Quigley, Uta Hinrichs, James Reid, Nicola Osborne and Ian Fieldhouse. Digging Into Data White Paper: Trading Consequences, March 2014. ([pdf](http://tradingconsequences.blogs.edina.ac.uk/files/2014/03/DiggingintoDataWhitePaper-final.pdf)]
 
-** Disclaimer **
+**Disclaimer**
 
 The information stored in the database is the text mining output for over 200,000 historical documents.  The mined information has been extracted automatically and contains errors.  When working with the database and intrepreting the results we therefore recommend some level of checking the context of the information in the original documents via close reading.
